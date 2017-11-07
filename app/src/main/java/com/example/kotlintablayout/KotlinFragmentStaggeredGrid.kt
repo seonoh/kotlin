@@ -2,7 +2,6 @@ package com.example.kotlintablayout
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.StaggeredGridLayoutManager
 import android.view.LayoutInflater
 import android.view.View
@@ -34,8 +33,6 @@ class KotlinFragmentStaggeredGrid : Fragment() {
         adapter.name = name
         adapter.poster = posterMap
 
-//        var manager = LinearLayoutManager(activity)
-//        manager.orientation = LinearLayoutManager.VERTICAL
         view.vv.layoutManager = StaggeredGridLayoutManager(3,1)
         view.vv.adapter = adapter
 
